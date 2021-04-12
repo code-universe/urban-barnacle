@@ -11,8 +11,10 @@ You can add your ideas [here.](https://docs.google.com/document/d/15K2bdA1oAKOud
 
 If you have any suggestions, you can contact us via
 
+[DingCheng](mailto:wang0798@e.ntu.edu.sg)
+
 [Jason](mailto:jszhang0001@gmail.com)
 
 [Kelvin](mailto:knguyen@codeuniverse.onmicrosoft.com)
 
-[DingCheng](mailto:wang0798@e.ntu.edu.sg)
+
