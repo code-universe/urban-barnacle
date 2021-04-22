@@ -9,6 +9,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
     && apt-get install --yes nodejs \
     && apt-get install --yes build-essential
 
+# Utils
+RUN apt-get update && apt install -y git vim nano
+
 # Install Python
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
@@ -24,5 +27,5 @@ RUN apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-
-
+# Alias python
+RUN echo "alias python=python3" >> ~/.bashrc
