@@ -40,13 +40,13 @@
 
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
-	"ms-python.python",
-	"ms-python.vscode-pylance",
-	"mtxr.sqltools",
-	"mtxr.sqltools-driver-pg",
-	"vtrois.gitmoji-vscode",
-	"esbenp.prettier-vscode"
-],
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg",
+    "vtrois.gitmoji-vscode",
+    "esbenp.prettier-vscode"
+  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [8000, 5432]
