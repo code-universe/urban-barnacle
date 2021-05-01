@@ -9,7 +9,7 @@
 
   // Set *default* container specific settings.json values on container create.
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
+    // "terminal.integrated.defaultProfile.linux": "/bin/bash",
     "sqltools.connections": [
       {
         "name": "Container database",
@@ -22,20 +22,20 @@
         "password": "postgres"
       }
     ],
-    "python.pythonPath": "/usr/local/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "python.languageServer": "Pylance",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-    "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-    "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-    "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-    "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-    "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
-    "python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
-    "python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-    "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
-    "python.testing.pytestPath": "/usr/local/py-utils/bin/pytest"
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.formatting.provider": "black",
+    "python.analysis.extraPaths": ["apis", "app"], // needed for https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#unresolved-import-warnings
+    "python.linting.banditPath": "/usr/local/bin/bandit",
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.testing.pytestPath": "/usr/local/bin/pytest",
+    "python.linting.mypyPath": "/usr/local/bin/mypy",
+    "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
+    "editor.formatOnSave": true
   },
 
   // Add the IDs of extensions you want installed when the container is created.
