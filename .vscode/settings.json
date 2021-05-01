@@ -1,0 +1,4 @@
+{
+  "python.pythonPath": "/usr/bin/python3",
+  "python.analysis.extraPaths": ["apis", "app"] // needed for https://github.com/microsoft/pylance-release/blob/main/TROUBLESHOOTING.md#unresolved-import-warnings
+}
