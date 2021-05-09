@@ -3,6 +3,9 @@ FROM ubuntu:${VARIANT}
 
 ENV PYTHONUNBUFFERED 1
 
+ARG ENV
+ENV ENV=${ENV}
+
 RUN apt-get update && apt-get install -y curl gnupg ca-certificates sudo git
 # [Option] Install Node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
@@ -16,6 +19,12 @@ RUN apt-get update && apt install -y git vim nano
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
     python3.8 python3-pip python3.8-dev
+
+# https://github.com/psycopg/psycopg2/issues/560
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y \
+    python3-dev libpq-dev
+    
 # Install Python packages
 COPY requirements.txt /tmp/pip-tmp/
 COPY requirements-dev.txt /tmp/pip-tmp/
