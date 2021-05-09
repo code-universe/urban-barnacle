@@ -10,6 +10,7 @@ def index(request):
     except FileNotFoundError:
         return HttpResponse(
             """
+            This endpoint is not meant to be accessed on development environment.
             Please build the front-end using cd frontend && npm install && npm run build
             """,
             status=501,
