@@ -20,7 +20,7 @@ Intentionally, there are 2 ways to install the development environment - with or
    - `code .` to open the directory with VS Code
    - Install `Remote-Containers` on VS Code
    - Open Command Palette (with `F1`) and select `Remote-Containers: Open Folder in Container`
-   - Once the container has been built, start `terminal` and start back end with `python manage.py runserver` and start front end with `cd frontend && npm start`
+   - Once the container has been built, start `terminal` and start back end with `python manage.py runserver` and start front end with `cd frontend && npm start` (if you are running front-end the first time, you need to run `npm install` before running `npm start`)
    - Your app now should be ready at `localhost:3000`
    - The Tableau extension file `trex` is located at `./frontend/extension.trex`
 2. Without Docker (currently not supported - however, a PR is more than welcome)
