@@ -14,23 +14,13 @@ Intentionally, there are 2 ways to install the development environment - with or
 
 ### To start development
 
-1. With Docker
-   - `git clone` the repository
-   - `cd urban-barnacle`
-   - `code .` to open the directory with VS Code
-   - Install `Remote-Containers` on VS Code
-   - Open Command Palette (with `F1`) and select `Remote-Containers: Open Folder in Container`
-   - Once the container has been built, start `terminal` and start back end with `python manage.py runserver` and start front end with `cd frontend && npm start` (if you are running front-end the first time, you need to run `npm install` before running `npm start`)
-   - Your app now should be ready at `localhost:3000`
-   - The Tableau extension file `trex` is located at `./frontend/extension.trex`
-2. Without Docker (currently not supported - however, a PR is more than welcome)
-   - ...
-
-Once the environment is installed, just run:
-
-## Ideas
-
-You can add your ideas [here.](https://docs.google.com/document/d/15K2bdA1oAKOudEJVmp944eF42rQfYHd_EV6zTYtiMiY/edit?usp=sharing)
+- Start VS Code in the repository's directory
+- Install `Remote-Containers` on VS Code
+- Open Command Palette (with `F1`) and select `Remote-Containers: Open Folder in Container`
+- Once the container has been built, start `terminal` and start back end with `python manage.py runserver` and start front end with `cd frontend && npm start` (if you are running front-end the first time, you need to run `npm install` before running `npm start`)
+- Your app now should be ready at `localhost:3000`
+- The Tableau extension file `trex` is located at `./frontend/extension.trex`
+- To start Tableau in development mode, run `open /Applications/Tableau\ Desktop\ <version>.app --args --remote-debugging-port=8696` (replace &lt;version&gt; with your current Tableau version, eg. `2021.2`)
 
 ## Contact us
 
